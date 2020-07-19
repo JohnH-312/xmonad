@@ -67,7 +67,7 @@ myLayouts = avoidStruts $
 
 
 ------------------------------------------
---      Main
+--      Main Section
 ------------------------------------------
 main = do
     xmproc <- spawnPipe "xmobar"

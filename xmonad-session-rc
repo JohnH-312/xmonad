@@ -1,0 +1,2 @@
+xrandr --output DVI-1-0 --primary --left-of DP-2 --auto
+xrandr --output DP-2 --right-of DVI-1-0 --rotate right

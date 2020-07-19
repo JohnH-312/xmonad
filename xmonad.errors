@@ -1,0 +1,52 @@
+
+xmonad.hs:59:18: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+59 |         myTall = spacing 6 $ ResizableTall nmaster delta ratio []
+   |                  ^^^^^^^
+
+xmonad.hs:61:18: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+61 |         myGrid = spacing 6 $ Grid
+   |                  ^^^^^^^
+
+xmonad.hs:62:21: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+62 |         myTwoPane = spacing 4 $ TwoPane delta ratio
+   |                     ^^^^^^^
+
+xmonad.hs:63:18: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+   |
+63 |         myFull = spacing 0 $ Full
+   |                  ^^^^^^^
+
+xmonad.hs:76:21: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+76 |     xmonad $ ewmh $ defaultConfig
+   |                     ^^^^^^^^^^^^^
+
+xmonad.hs:77:132: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+77 |         { manageHook = ( isFullscreen --> doFullFloat ) <+> namedScratchpadManageHook myScratchPads <+> manageDocks <+> manageHook defaultConfig
+   |                                                                                                                                    ^^^^^^^^^^^^^
+
+xmonad.hs:91:45: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
+   |
+91 |         , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
+   |                                             ^^^^^^^^^^^^^

@@ -44,6 +44,8 @@ module Custom.MyHotkeys where
         , ((mod4Mask .|. shiftMask,     0x5b),          decScreenWindowSpacing 2 )
         , ((mod4Mask .|. controlMask,   xK_Right),      shiftNextScreen >> nextScreen >> tagToEmptyWorkspace)
         , ((mod4Mask .|. controlMask,   xK_Return),     namedScratchpadAction myScratchPads "terminal")
+        , ((mod4Mask .|. controlMask,   xK_apostrophe),     namedScratchpadAction myScratchPads "note")
+        
         ]
     
     removedKeys :: [(KeyMask, KeySym)]

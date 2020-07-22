@@ -70,7 +70,7 @@ myLayouts = avoidStruts $
 --      Main Section
 ------------------------------------------
 main = do
-    xmproc <- spawnPipe "xmobar"
+    xmproc <- spawnPipe "xmobar ~/.xmonad/.xmobarrc"
 
 
     xmonad $ ewmh $ defaultConfig

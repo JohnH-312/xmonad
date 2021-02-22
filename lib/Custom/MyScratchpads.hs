@@ -1,8 +1,9 @@
-module Custom.MyScratchpads where
 
+module Custom.MyScratchpads where
     import XMonad
     import XMonad.Util.NamedScratchpad
     import qualified XMonad.StackSet as W
+
 
     ------------------------------------------------------------------------
     -- SCRATCHPADS

@@ -1,0 +1,29 @@
+#################################
+#          My HotKeys
+#################################
+
+Mod + d					--> 	Close window
+Mod + q					--> 	Reload Xmonad
+Mod + Shift + q 		--> 	Log Out/Close Xmonad
+Mod + Shift + Enter 	-->		Launch Terminal (st)
+Mod + b					--> 	Laucn Browser (Chromium)
+Mod + Shift + Menu 		--> 	Edit Xmonad Config
+Mod + Ctrl  + Menu 		--> 	Edit Xmobar Config
+Mod + Shift + ? 		--> 	Read hotkeys
+Mod + Shift + K/J		--> 	swap highlighted window up and down stack
+Mod + k/j				--> 	Move up/down stack
+Mod + h/l				--> 	decrease/increase the size of the Master window in the stack
+Mod + p 				--> 	app launcher
+Mod + Shift + t			--> 	theme switcher
+Mod + z 				--> 	Switch to previous Desktop
+Mod + (num)				--> 	Switch to Desktop number (num)
+Mod + Shift + (num) 	--> 	Swap highlighted window to Desktop number (num)
+Mod + Left/Right		--> 	Switch between monitors
+Mod + Shift + Left/Right--> 	Swap highlighted window between monitors
+Mod + Ctrl  + Right 	--> 	Move highlighted window to next empty Destop
+Mod + Up/Down 			-->  	Cycle up and down through Open Desktops
+Mod + Shift + Up/Down	--> 	switch highlighted window between Desktops in cycle
+Mod + Shift + [/] 		--> 	Increase/Decrease the window spacing
+Mod + Shift + space 	--> 	Reset to default Layout
+Mod + space				--> 	cycle throught window layouts
+

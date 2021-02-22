@@ -1,52 +1,60 @@
+Loaded package environment from /home/jonny/.ghc/x86_64-linux-8.8.4/environments/default
 
-xmonad.hs:59:18: warning: [-Wdeprecations]
+xmonad.hs:101:18: warning: [-Wdeprecations]
     In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
-   |
-59 |         myTall = spacing 6 $ ResizableTall nmaster delta ratio []
-   |                  ^^^^^^^
+    |
+101 |         myTall = spacing 6 $ ResizableTall nmaster delta ratio []
+    |                  ^^^^^^^
 
-xmonad.hs:61:18: warning: [-Wdeprecations]
+xmonad.hs:103:18: warning: [-Wdeprecations]
     In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
-   |
-61 |         myGrid = spacing 6 $ Grid
-   |                  ^^^^^^^
+    |
+103 |         myGrid = spacing 6 $ Grid
+    |                  ^^^^^^^
 
-xmonad.hs:62:21: warning: [-Wdeprecations]
+xmonad.hs:104:21: warning: [-Wdeprecations]
     In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
-   |
-62 |         myTwoPane = spacing 4 $ TwoPane delta ratio
-   |                     ^^^^^^^
+    |
+104 |         myTwoPane = spacing 4 $ TwoPane delta ratio
+    |                     ^^^^^^^
 
-xmonad.hs:63:18: warning: [-Wdeprecations]
+xmonad.hs:105:18: warning: [-Wdeprecations]
     In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
-   |
-63 |         myFull = spacing 0 $ Full
-   |                  ^^^^^^^
+    |
+105 |         myFull = spacing 0 $ noBorders $ Full
+    |                  ^^^^^^^
 
-xmonad.hs:76:21: warning: [-Wdeprecations]
+xmonad.hs:127:41: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
-   |
-76 |     xmonad $ ewmh $ defaultConfig
-   |                     ^^^^^^^^^^^^^
+    |
+127 |     xmonad $ ewmh $ fullscreenSupport $ defaultConfig
+    |                                         ^^^^^^^^^^^^^
 
-xmonad.hs:77:132: warning: [-Wdeprecations]
+xmonad.hs:128:132: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
-   |
-77 |         { manageHook = ( isFullscreen --> doFullFloat ) <+> namedScratchpadManageHook myScratchPads <+> manageDocks <+> manageHook defaultConfig
-   |                                                                                                                                    ^^^^^^^^^^^^^
+    |
+128 |         { manageHook = ( isFullscreen --> doFullFloat ) <+> namedScratchpadManageHook myScratchPads <+> manageDocks <+> manageHook defaultConfig
+    |                                                                                                                                    ^^^^^^^^^^^^^
 
-xmonad.hs:91:45: warning: [-Wdeprecations]
+xmonad.hs:135:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+    |
+135 |         , terminal = myTerminal
+    | ^^^^^^^^
+
+xmonad.hs:145:45: warning: [-Wdeprecations]
     In the use of ‘defaultConfig’
     (imported from XMonad, but defined in XMonad.Config):
     Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
-   |
-91 |         , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
-   |                                             ^^^^^^^^^^^^^
+    |
+145 |         , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
+    |                                             ^^^^^^^^^^^^^

@@ -38,6 +38,7 @@ module Custom.MyHotkeys where
         , ((0,                          0x1008ff13),    spawn "pactl set-sink-volume @DEFAULT_SINK@ +5%")
         , ((0,                          0x1008ff11),    spawn "pactl set-sink-volume @DEFAULT_SINK@ -5%")
         , ((0,                          0x1008ff12),    spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
+        , ((mod4Mask,                   0x1008ff12),    spawn "pavucontrol")
         , ((0,                          0x1008ff14),    spawn "playerctl play-pause")
         , ((mod4Mask .|. shiftMask,     0x5d),          incScreenWindowSpacing 2 )
         , ((mod4Mask .|. shiftMask,     0x5b),          decScreenWindowSpacing 2 )
@@ -45,7 +46,7 @@ module Custom.MyHotkeys where
         , ((mod4Mask .|. controlMask,   xK_Return),     namedScratchpadAction myScratchPads "terminal")
         , ((mod4Mask .|. controlMask,   xK_apostrophe),     namedScratchpadAction myScratchPads "note")
         , ((mod4Mask,                   xK_b),          spawn "brave")
-        , ((mod4Mask .|. shiftMask,                   xK_t),          spawn "xtheme-picker.sh")
+        , ((mod4Mask .|. shiftMask,     xK_t),          spawn "xtheme-picker.sh")
         ]
     
     removedKeys :: [(KeyMask, KeySym)]
